@@ -10,7 +10,7 @@
 
 ## 目标与哲学
 
-[闲逸静晴轩]的(https://docz.lovejade.cn)诞生，是为了体验采用 [Docz](https://www.docz.site/) 构建 Web 应用程序；同时，为便捷而优雅的创建 Web 应用提供些参考。
+[闲逸静晴轩](https://docz.lovejade.cn)的诞生，是为了体验采用 [Docz](https://www.docz.site/) 构建 Web 应用程序；同时，为便捷而优雅的创建 Web 应用提供些参考。
 
 [Docz](https://www.docz.site/)，为极简创造文档而生。它有如下特征：
 - 零配置，无需担心复杂的配置步骤，且使用十分简单；

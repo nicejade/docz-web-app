@@ -21,6 +21,24 @@
 
 另外，[Docz](https://www.docz.site/) 内置了些许组件，通过在组件构建过程中结合 `AST` 解析，有可能带来很多出类拔萃的想法，而 [Docz](https://www.docz.site/) 则是更好的选择。甚至，您可以轻松构建和部署您的文档，从而建立您的 Web 应用程序。
 
+## 如何使用
+
+可将项目 `Fork` 至自己的代码仓库，运行一下命令即可：
+
+```bash
+git clone https://github.com/${your-github-id}/docz-web-app
+cd docz-web-app
+yarn && yarn start
+```
+
+修改 `deploy.sh` 文件中的“**自定义域名**”以及“**仓库路径**”，运行如下命令，即可实现部署：
+
+```bash
+yarn deploy
+```
+
+需要补充说明的是：项目默认在 `master` 分支下构建，推送到 `gh-pages` 分支，发布至 `GitHub Pages`；在项目 `Setings` 可启用该服务，如果暂不设定自定义域名，注释该行即可。
+
 ## 相关链接
 
 - [About Me](https://about.me/nicejade)

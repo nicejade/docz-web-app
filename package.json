@@ -5,7 +5,8 @@
   "author": "nicejade",
   "scripts": {
     "dev": "docz dev",
-    "build": "docz build"
+    "build": "docz build",
+    "deploy": "bash deploy.sh"
   },
   "devDependencies": {
     "docz": "^0.2.11",

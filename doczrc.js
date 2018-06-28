@@ -25,7 +25,7 @@ const modifyBundlerConfig = config => {
 
 export default {
   base: '/',
-  title: '静晴轩',
+  title: '吾意静晴轩',
   description: 'Web applications built with Docz.',
   source: './',
   dest: '.docz/dist',
@@ -33,13 +33,27 @@ export default {
   files: '**/*.mdx',
   indexHtml: 'index.html',
   themeConfig: {
+    mode: 'dark',
+    /*logo: {
+      src: null,
+      width: null
+    },*/
     colors: {
-      primary: 'tomato'
+      primary: '#281f1d',
+      main: '#20a0ff',
+      link: '#20a0ff',
+      grayExtraLight: '#ed1941'
     },
     styles: {
       h1: {
-        fontSize: 100
-      }
+        fontSize: 32
+      },
+      h2: {
+        margin: ['25px 0 20px', '30px 0 20px'],
+        lineHeight: ['1.2em', '1.5em'],
+        fontSize: [30, 32],
+        fontWeight: 400,
+      },
     }
   },
   plugins: [babel()],

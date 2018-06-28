@@ -3054,7 +3054,7 @@ docz-core@^0.2.11:
     ws "^5.2.0"
     yargs "^11.0.0"
 
-docz-core@^0.3.3, docz-core@^0.3.4:
+docz-core@^0.3.4:
   version "0.3.4"
   resolved "http://registry.npm.taobao.org/docz-core/download/docz-core-0.3.4.tgz#23938419b2a38b5361af1bf5f4427af7c8b70f49"
   dependencies:
@@ -3154,23 +3154,7 @@ docz-theme-default@^0.3.4:
     react-spinners "^0.3.2"
     webfontloader "^1.6.28"
 
-docz@0.3.3:
-  version "0.3.3"
-  resolved "http://registry.npm.taobao.org/docz/download/docz-0.3.3.tgz#25c70008b1308a051ab16ad5dcf7ca1e65c74e06"
-  dependencies:
-    "@mdx-js/tag" "^0.11.0"
-    "@sindresorhus/slugify" "^0.3.0"
-    deepmerge "^2.1.1"
-    docz-core "^0.3.3"
-    invariant "^2.2.4"
-    loadable-components "^2.2.2"
-    pascalcase "^0.1.1"
-    react "^16.4.1"
-    react-dom "^16.4.1"
-    react-router-dom "^4.3.1"
-    yargs "^11.0.0"
-
-docz@^0.3.4:
+docz@0.3.4, docz@^0.3.4:
   version "0.3.4"
   resolved "http://registry.npm.taobao.org/docz/download/docz-0.3.4.tgz#bfa0c5b29f5b80b8c3a921478cc9bdeb02865ced"
   dependencies:

@@ -4,8 +4,10 @@
   "description": "Web applications built with Docz.",
   "author": "nicejade",
   "scripts": {
+    "start": "docz dev",
     "dev": "docz dev",
     "build": "docz build",
+    "docz": "docz --help",
     "deploy": "bash deploy.sh"
   },
   "devDependencies": {

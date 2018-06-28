@@ -9,7 +9,7 @@
     "deploy": "bash deploy.sh"
   },
   "devDependencies": {
-    "docz": "^0.2.11",
+    "docz": "0.3.3",
     "favicons-webpack-plugin": "^0.0.9",
     "typescript": "^2.9.2"
   },

@@ -8,7 +8,8 @@
     "dev": "docz dev",
     "build": "docz build",
     "docz": "docz --help",
-    "deploy": "bash deploy.sh"
+    "deploy": "bash command/deploy.sh",
+    "preview": "node command/preview.js"
   },
   "devDependencies": {
     "docz": "0.3.4",

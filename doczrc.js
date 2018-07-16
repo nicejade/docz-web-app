@@ -1,6 +1,6 @@
 import * as path from 'path'
-import { babel } from 'docz-plugin-babel6'
 import FaviconsWebpackPlugin from 'favicons-webpack-plugin'
+import externalLinks from 'remark-external-links'
 
 const PUBLIC = path.resolve(__dirname, 'public')
 const SRC = path.resolve(__dirname, 'src')
@@ -10,13 +10,13 @@ const modifyBundlerConfig = config => {
     '@fonts': `${PUBLIC}/fonts`,
     '@images': `${PUBLIC}/images`,
     '@components': `${SRC}/theme/components`,
-    '@styles': `${SRC}/theme/styles`
+    '@styles': `${SRC}/theme/styles`,
   })
 
   config.plugins.push(
     new FaviconsWebpackPlugin({
       logo: `${PUBLIC}/images/favicon.png`,
-      inject: true
+      inject: true,
     })
   )
 
@@ -25,13 +25,11 @@ const modifyBundlerConfig = config => {
 
 export default {
   base: '/',
+  dest: '.docz/dist',
   title: '吾意静晴轩',
   description: 'Web applications built with Docz.',
-  source: './',
-  dest: '.docz/dist',
-  typescript: true,
-  files: '**/*.mdx',
-  indexHtml: 'index.html',
+  indexHtml: 'src/index.html',
+  theme: 'src/theme/index',
   themeConfig: {
     mode: 'dark',
     /*logo: {
@@ -40,22 +38,12 @@ export default {
     },*/
     colors: {
       primary: '#281f1d',
-      main: '#20a0ff',
-      link: '#20a0ff',
-      grayExtraLight: '#ed1941'
+      main: '#00bf8f',
+      link: '#00bf8f',
+      grayExtraLight: '#ed1941',
     },
-    styles: {
-      h1: {
-        fontSize: 32
-      },
-      h2: {
-        margin: ['25px 0 20px', '30px 0 20px'],
-        lineHeight: ['1.2em', '1.5em'],
-        fontSize: [30, 32],
-        fontWeight: 400,
-      },
-    }
   },
-  plugins: [babel()],
-  modifyBundlerConfig
+  propsParser: false,
+  mdPlugins: [externalLinks.default],
+  modifyBundlerConfig,
 }

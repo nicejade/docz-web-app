@@ -11,11 +11,9 @@
     "deploy": "bash deploy.sh"
   },
   "devDependencies": {
-    "docz": "0.3.4",
+    "docz": "^0.12.5",
     "favicons-webpack-plugin": "^0.0.9",
     "typescript": "^2.9.2"
   },
-  "dependencies": {
-    "docz-plugin-babel6": "^0.2.11"
-  }
+  "dependencies": {}
 }

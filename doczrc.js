@@ -1,6 +1,4 @@
 import * as path from 'path'
-import { babel } from 'docz-plugin-babel6'
-import FaviconsWebpackPlugin from 'favicons-webpack-plugin'
 
 const PUBLIC = path.resolve(__dirname, 'public')
 const SRC = path.resolve(__dirname, 'src')
@@ -13,13 +11,6 @@ const modifyBundlerConfig = config => {
     '@styles': `${SRC}/theme/styles`
   })
 
-  config.plugins.push(
-    new FaviconsWebpackPlugin({
-      logo: `${PUBLIC}/images/favicon.png`,
-      inject: true
-    })
-  )
-
   return config
 }
 
@@ -27,17 +18,10 @@ export default {
   base: '/',
   title: '吾意静晴轩',
   description: 'Web applications built with Docz.',
-  source: './',
   dest: '.docz/dist',
   typescript: true,
-  files: '**/*.mdx',
-  indexHtml: 'index.html',
   themeConfig: {
     mode: 'dark',
-    /*logo: {
-      src: null,
-      width: null
-    },*/
     colors: {
       primary: '#281f1d',
       main: '#20a0ff',
@@ -56,6 +40,5 @@ export default {
       },
     }
   },
-  plugins: [babel()],
   modifyBundlerConfig
 }

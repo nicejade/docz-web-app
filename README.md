@@ -44,13 +44,13 @@ yarn deploy
 - [About Me](https://about.me/nicejade)
 - [**倾城之链**](https://nicelinks.site?from=github)
 - [静晴轩别苑](https://nice.lovejade.cn/?from=github)
-- [晚晴幽草轩](https://jeffjade.com/nicelinks)
+- [晚晴幽草轩](https://www.jeffjade.com/nicelinks)
 - [天意人间舫](https://blog.lovejade.cn/?from=github)
 - [新浪微博](https://weibo.com/jeffjade)
 - [知乎主页](https://www.zhihu.com/people/yang-qiong-pu/)
 - [简书主页](https://www.jianshu.com/u/9aae3d8f4c3d)
 - [SegmentFault](https://segmentfault.com/u/jeffjade)
-- [Twitter](https://twitter.com/jeffjade2)
+- [Twitter](https://twitter.com/nicejadeyang)
 - [Facebook](https://www.facebook.com/yang.gang.jade)
 
 ## 许可执照

@@ -3,13 +3,14 @@ import * as path from 'path'
 const PUBLIC = path.resolve(__dirname, 'public')
 const SRC = path.resolve(__dirname, 'src')
 const themeConfig = require('./themeConfig').default
+import { css } from 'docz-plugin-css'
 
 const modifyBundlerConfig = config => {
   config.resolve.alias = Object.assign({}, config.resolve.alias, {
     '@fonts': `${PUBLIC}/fonts`,
     '@images': `${PUBLIC}/images`,
-    '@components': `${SRC}/theme/components`,
-    '@styles': `${SRC}/theme/styles`
+    '@components': `${SRC}/components`,
+    '@styles': `${SRC}/styles`
   })
   return config
 }
@@ -29,5 +30,14 @@ export default {
     }
   },
   themeConfig: themeConfig,
-  modifyBundlerConfig
+  modifyBundlerConfig,
+  plugins: [
+    css({
+      preprocessor: 'sass',
+      // cssmodules: true,
+      loaderOpts: {
+        /* whatever your preprocessor loader accept */
+      }
+    })
+  ]
 }

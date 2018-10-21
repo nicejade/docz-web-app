@@ -62,7 +62,7 @@ export default {
       lineHeight: 1.6,
     },
     container: {
-      width: 920,
+      width: '100%',
       padding: ['20px 30px', '30px 40px 40px'],
     },
     h1: {

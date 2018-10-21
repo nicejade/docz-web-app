@@ -115,6 +115,7 @@ export default {
       lineHeight: 1.8,
     },
     table: {
+      width: '100%',
       marginBottom: [20, 40],
       fontFamily: '"Source Code Pro", monospace',
       fontSize: 14,
